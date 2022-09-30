@@ -5,7 +5,7 @@
   --white: #fff;
   --blue: #272d4e;
   --gray: #57606a;
-  --light-gray: #f4f4f4;
+  --light-gray: #fdf4f4;
   --dark-blue: #001a49;
 
   /* FONTS  */
@@ -193,6 +193,13 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--roboto);
+  color: var(--dark-blue);
+}
+
 
 /* FOCUS-STYLES  */
 *:focus {
@@ -361,10 +368,8 @@ img {
 .hero__title {
   margin-top: 0;
   margin-bottom: 36px;
-  font-family: var(--roboto);
   font-size: 90px;
   line-height: 120%;
-  color: var(--dark-blue);
 }
 
 .hero__text {
@@ -383,4 +388,58 @@ img {
   font-size: 29px;
   line-height: 137%;
   color: #94a2b3;
+}
+
+
+/* CASHBACK  */
+.section-cashback {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.section-cashback__container {
+  display: flex;
+  justify-content: center;
+}
+
+.section-cashback__cashback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 29px;
+  background-color: var(--light-gray);
+  border-radius: 21px;
+  width: 100%;
+}
+
+.cashback__content {
+  width: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 77px;
+}
+
+.cashback__title {
+  margin-top: 0;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 144%;
+}
+
+.cashback__text {
+  margin: 0;
+  color: var(--gray);
+  font-size: 24px;
+  line-height: 150%;
+  font-family: var(--roboto);
+}
+
+.cashback__img {
+  display: block;
+  width: 509px;
+  height: 186px;
+  object-fit: contain;
 }
