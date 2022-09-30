@@ -5,7 +5,7 @@
   --white: #fff;
   --blue: #272d4e;
   --gray: #57606a;
-  --light-gray: #fdf4f4;
+  --light-gray: #f4f4f4;
   --dark-blue: #001a49;
 
   /* FONTS  */
@@ -227,4 +227,132 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* BUTTON  */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--transparent {
+  display: none;
+  position: relative;
+  font-family: var(--mulish);
+  color: var(--red);
+  text-align: right;
+  font-size: 9px;
+  line-height: normal;
+  font-weight: 700;
+  padding: 9px 18px 9px 9px;
+  min-width: 114px;
+  border-radius: 20px;
+  border: 1.2px solid var(--red);
+}
+
+.button--transparent > img {
+  display: block;
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+.button--red {
+}
+.button--blue {
+}
+
+
+/* LOGO  */
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 226px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.hero-header-wrapper {
+  background-color: var(--light-gray);
+  background-image: url(../img/hero-bg.svg), linear-gradient(212.6deg, #FFFFFF 3.87%, rgba(255, 255, 255, 0) 45.48%);
+  background-position: calc(50% + 400px) -140px;
+  padding-bottom: 190px;
+  background-repeat: no-repeat;
+}
+
+/* SITE-HEADER  */
+.site-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  margin-right: 30px;
+}
+
+.hero {
+  padding-top: 155px;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 567px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: var(--roboto);
+  font-size: 90px;
+  line-height: 120%;
+  color: var(--dark-blue);
+}
+
+.hero__text {
+  color: var(--gray);
+  font-family: var(--roboto);
+  font-size: 18px;
+  line-height: 138%;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 118px;
+}
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
 }
