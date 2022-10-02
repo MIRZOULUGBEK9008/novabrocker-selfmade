@@ -162,6 +162,22 @@
 }
 
 
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--gray);
+  -box-shadow: 0 0 0px 1000px  inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 /* GLOBAL-STYLES  */
 html {
   box-sizing: border-box;
@@ -445,6 +461,14 @@ h3 {
 }
 
 
+/* TITLE  */
+.title {
+  text-align: center;
+  font-size: 50px;
+  line-height: 152%;
+}
+
+
 /* STEP-BY-STEP  */
 .section-step {
   padding-top: 60px;
@@ -455,10 +479,8 @@ h3 {
   width: 100%;
   max-width: 978px;
   margin: 0 auto 72px auto;
-  text-align: center;
-  font-size: 50px;
-  line-height: 152%;
 }
+
 
 /* STEPS  */
 .steps {
@@ -558,8 +580,6 @@ h3 {
 
 .section-document__title {
   margin: 0;
-  font-size: 50px;
-  line-height: 152%;
 }
 
 .section-document__text {
@@ -633,15 +653,90 @@ h3 {
 }
 
 .card__label {
+  display: flex;
   align-self: center;
   cursor: pointer;
   flex-shrink: 0;
   margin-left: 20px;
+  box-shadow: 2px 5px 8px 0px #00000014;
+  border-radius: 50%;
 }
 
 .card__button-img {
   display: block;
   width: 59px;
   height: 59px;
+  object-fit: contain;
+}
+
+
+/* CTA  */
+.cta {
+  padding-top: 102px;
+  padding-bottom: 54px;
+}
+
+.cta__inner {
+  padding-top: 52px;
+  padding-bottom: 42px;
+  background-color: var(--red);
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta__title {
+  width: 100%;
+  max-width: 709px;
+  color: var(--white);
+  font-size: 40px;
+  line-height: 137%;
+  font-weight: 400;
+}
+
+.cta__title > b {
+  font-weight: 500;
+}
+
+.cta__form {
+  margin-left: 30px;
+}
+
+.from__input-link-wrapper {
+  position: relative;
+}
+
+.form__input {
+  max-width: 433px;
+  width: 100%;
+  color: var(--gray);
+  font-size: 28px;
+  line-height: 125%;
+  padding: 21px 14px 21px 38px;
+  border: none;
+  border-radius: 48px;
+  box-shadow: -6.013888835906982px -6.013888835906982px 12.027777671813965px 0px rgba(255, 255, 255, 1) inset, 6.013888835906982px 6.013888835906982px 12.027777671813965px 0px rgba(170, 170, 204, 0.5) inset, 2.405555486679077px 2.405555486679077px 4.811110973358154px 0px rgba(170, 170, 204, 0.25) inset, -2.405555486679077px -2.405555486679077px 4.811110973358154px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.form__input::placeholder {
+  color:  #c3c6cb;
+}
+
+.form__link {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 14px;
+  box-shadow: 6.01389px 6.01389px 12.0278px rgba(170, 170, 204, 0.5), -6.01389px -6.01389px 12.0278px #ffffff;
+  border-radius: 50%;
+}
+
+.form__link-img {
+  display: block;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 }
