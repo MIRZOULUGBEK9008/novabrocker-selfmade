@@ -394,7 +394,7 @@ h3 {
 /* CASHBACK  */
 .section-cashback {
   padding-top: 118px;
-  padding-bottom: 59px;
+  padding-bottom: 60px;
 }
 
 .section-cashback__container {
@@ -447,8 +447,8 @@ h3 {
 
 /* STEP-BY-STEP  */
 .section-step {
-  padding-top: 59px;
-  padding-bottom: 75px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-step__title {
@@ -540,4 +540,108 @@ h3 {
   color: var(--gray);
   font-size: 20px;
   font-weight: 500;
+}
+
+
+/* DOCUMENTION  */
+.section-document {
+  padding-top: 60px;
+  padding-bottom: 102px;
+}
+
+.section-document__content {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 90px;
+}
+
+.section-document__title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 152%;
+}
+
+.section-document__text {
+  margin: 0;
+  font-family: var(--roboto);
+  color: var(--gray);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-document__inner {
+  display: flex;
+  margin-left: -48px;
+  margin-bottom: -100px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--red);
+  border-radius: 21px;
+  overflow: hidden;
+}
+
+.section-document__card {
+  position: relative;
+  width: calc((100% - 48px) / 2);
+  padding: 32px 54px;
+  margin-left: 48px;
+  margin-bottom: 100px;
+}
+
+.card--red {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.card--red .card__title {
+  color: var(--white);
+}
+
+.card--white {
+  color: var(--dark-blue);
+}
+
+.card__img {
+  display: block;
+  align-self: flex-start;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.card__content {
+  width: 100%;
+  max-width: 364px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 116%;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__label {
+  align-self: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.card__button-img {
+  display: block;
+  width: 59px;
+  height: 59px;
+  object-fit: contain;
 }
