@@ -37,7 +37,7 @@
     <header class="site-header">
       <div class="container site-header__container">
         <!-- LOGO  -->
-        <a class="logo site-header__logo" href="index.html">
+        <a class="logo site-header__logo" href="index.html" tabindex="1">
           <img class="logo__img" src="img/logo.svg" alt="Novabrocker logo" width="226" height="40">
         </a>
         <a class="button button--transparent" href="tel:+40068034340">
@@ -53,9 +53,9 @@
           <h1 class="hero__title">Asigurare RCA online</h1>
           <p class="hero__text">Economisește timp și calculează online Asigurarea RCA în doar câteva minute. În doar 3 pași simpli, vei primi Asigurarea electronică.</p>
           <div class="hero__button-wrapper">
-            <a class="button button--red" href="#">Calculează</a>
+            <a class="button button--red" href="#" tabindex="2">Calculează</a>
             sau
-            <a class="button button--blue" href="#cta">solicită un apel</a>
+            <a class="button button--blue" href="#cta" tabindex="3">solicită un apel</a>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
               <h3 class="card__title">Încarcă poze cu<br>pașaportul tehnic</h3>
               <p class="card__text">Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.</p>
             </div>
-            <label class="card__label" for="passport" aria-label="Upload pictures with your technical passport">
+            <label class="card__label" for="passport" aria-label="Upload pictures with your technical passport" tabindex="4">
               <img class="card__input-img" src="img/white-plus.svg" alt="" aria-hidden="true">
               <input class="card__input visually-hidden" type="file" id="passport" required>
             </label>
@@ -141,7 +141,7 @@
               <h3 class="card__title">Completează<br>manual</h3>
               <p class="card__text">Lasă-ne detaliile mai jos și vei primi oferta de preț exact în doar câteva minute.</p>
             </div>
-            <label class="card__label" for="manual" aria-label="Fill in manually">
+            <label class="card__label" for="manual" aria-label="Fill in manually" tabindex="5">
               <img class="card__input-img" src="img/dark-blue-plus.svg" alt="" aria-hidden="true">
               <input class="card__input visually-hidden" type="file" id="manual" required>
             </label>
@@ -172,6 +172,50 @@
             </div>
           </form>
         </div>
+      </div>
+    </section>
+
+
+    <!-- OFFERS  -->
+    <section class="section-offers">
+      <div class="container section-offers__container">
+        <h2 class="section-offers__title">Novabroker îți oferă</h2>
+
+        <!-- OFFERS-LIST  -->
+        <ul class="offers section-offers__offers">
+
+          <li class="offers__item offer">
+            <img class="offer__img" src="img/dollar-icon.svg" alt="" aria-hidden="true" width="64" height="64">
+            <div class="offer__content">
+              <h3 class="offer__title">Prețuiește-ți<br>timpul</h3>
+              <p class="offer__text">Procesul de solicitare și primire a asigurării îți economisește timpul, fiind ușor, rapid și 100% online.</p>
+            </div>
+          </li>
+
+          <li class="offers__item offer">
+            <img class="offer__img" src="img/time-icon.svg" alt="" aria-hidden="true" width="64" height="64">
+            <div class="offer__content">
+              <h3 class="offer__title">Economisește până la 50% prin sistemul Bonus-Malus</h3>
+              <p class="offer__text">Sistemul Bonus-Malus îți asigură economisiri de până la 50% în cazul în care nu ai avut accidente rutiere în ultimii cinci ani.</p>
+            </div>
+          </li>
+
+          <li class="offers__item offer">
+            <img class="offer__img" src="img/privacy-icon.svg" alt="" aria-hidden="true" width="64" height="64">
+            <div class="offer__content">
+              <h3 class="offer__title">Consultare<br>accesibilă 24/7</h3>
+              <p class="offer__text">Echipa NOVABROKER este mereu alături, gata să te ajute și să răspundă la orice întrebare la orice oră.</p>
+            </div>
+          </li>
+
+          <li class="offers__item offer">
+            <img class="offer__img" src="img/percent-icon.svg" alt="" aria-hidden="true" width="64" height="64">
+            <div class="offer__content">
+              <h3 class="offer__title">10% cashback și oferte<br>personalizate individual</h3>
+              <p class="offer__text">Comandă Asigurarea acum și primești 10% cashback anual.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
