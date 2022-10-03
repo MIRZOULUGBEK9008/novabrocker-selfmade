@@ -715,7 +715,7 @@ h3 {
   color: var(--gray);
   font-size: 28px;
   line-height: 125%;
-  padding: 21px 14px 21px 38px;
+  padding: 21px 75px 21px 38px;
   border: none;
   border-radius: 48px;
   box-shadow: -6.013888835906982px -6.013888835906982px 12.027777671813965px 0px rgba(255, 255, 255, 1) inset, 6.013888835906982px 6.013888835906982px 12.027777671813965px 0px rgba(170, 170, 204, 0.5) inset, 2.405555486679077px 2.405555486679077px 4.811110973358154px 0px rgba(170, 170, 204, 0.25) inset, -2.405555486679077px -2.405555486679077px 4.811110973358154px 0px rgba(255, 255, 255, 0.5) inset;
@@ -725,8 +725,15 @@ h3 {
   color:  #c3c6cb;
 }
 
+.form__input:not(:placeholder-shown) + .form__link {
+  display: none;
+}
+
+.form__input:not(:placeholder-shown) ~ .form__button {
+  display: inline-flex;
+}
+
 .form__link {
-  display: inline-block;
   position: absolute;
   top: calc(50% - 24px);
   right: 14px;
@@ -735,6 +742,25 @@ h3 {
 }
 
 .form__link-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.form__button {
+  display: none;
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 14px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: 6.01389px 6.01389px 12.0278px rgba(170, 170, 204, 0.5), -6.01389px -6.01389px 12.0278px #ffffff;
+  border-radius: 50%;
+}
+
+.form__button-img {
   display: block;
   width: 48px;
   height: 48px;
