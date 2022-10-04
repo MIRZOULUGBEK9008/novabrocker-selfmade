@@ -53,8 +53,8 @@
 
 @font-face {
   font-family: "Mulish";
-  src: url("Mulish-Bold.woff2") format("woff2"),
-  url("Mulish-Bold.woff") format("woff");
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"),
+  url("../fonts/Mulish-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -62,8 +62,8 @@
 
 @font-face {
   font-family: "Mulish";
-  src: url("Mulish-Medium.woff2") format("woff2"),
-  url("Mulish-Medium.woff") format("woff");
+  src: url("../fonts/Mulish-Medium.woff2") format("woff2"),
+  url("../fonts/Mulish-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -71,8 +71,8 @@
 
 @font-face {
   font-family: "Mulish";
-  src: url("Mulish-Regular.woff2") format("woff2"),
-  url("Mulish-Regular.woff") format("woff");
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"),
+  url("../fonts/Mulish-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
