@@ -512,15 +512,11 @@ h3 {
   content: "";
   position: absolute;
   top: 48px;
+  left: -65%;
   height: 2px;
   width: 284px;
   border-radius: 2px;
   background-color: #c8c8c8;
-}
-
-.steps__item:nth-child(3n)::before,
-.steps__item:nth-child(3n-1)::before {
-  left: -65%;
 }
 
 .step__content {
