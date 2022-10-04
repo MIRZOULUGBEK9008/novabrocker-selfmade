@@ -500,6 +500,7 @@ h3 {
 .steps__item {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 372px;
   counter-increment: step;
@@ -996,4 +997,91 @@ h3 {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 183%;
+}
+
+
+/* MEDIA  */
+/* 1920px */
+@media only screen and (max-width: 1920px) {
+  .info__container {
+    max-width: 1528px;
+  }
+
+  .info__content-wrapper {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 70px 50px;
+  }
+
+  .info__content {
+    max-width: 70%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+
+  .info__playback {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* 1550px */
+@media only screen and (max-width: 1550px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto -100px auto;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .steps__item {
+    position: static;
+    margin: 0 0 100px 0;
+  }
+
+  .steps__item:nth-child(3n)::before,
+  .steps__item:nth-child(3n-1)::before {
+    display: none;
+  }
+
+  .steps__item:nth-child(odd) {
+    margin-right: auto;
+  }
+
+  .steps__item:nth-child(even) {
+    margin-left: auto;
+  }
+
+  .section-document__inner {
+    flex-direction: column;
+    margin: 0 auto -80px auto;
+  }
+
+  .section-document__card {
+    width: 100%;
+    margin: 0 0 80px 0;
+  }
+
+  .card__content {
+    max-width: 60%;
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+
+  .section-offers__offers {
+    margin: 0 0 -60px 0;
+  }
+
+  .offers__item:nth-child(odd) {
+    margin-right: auto;
+  }
+
+  .offers__item:nth-child(even) {
+    margin-left: auto;
+  }
 }
