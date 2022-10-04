@@ -1260,3 +1260,108 @@ h3 {
     margin-bottom: 30px;
   }
 }
+
+
+/* 700px */
+@media only screen and (max-width: 700px) {
+  *:focus {
+    outline: none;
+  }
+
+  .button {
+    font-size: 19px;
+  }
+
+  .button--transparent {
+    font-size: 9px;
+    padding: 9px 18px 9px 9px;
+    min-width: 114px;
+  }
+
+  .button--transparent > img {
+    width: 32px;
+  }
+
+  .button--red {
+    margin-right: 15px;
+    padding: 15px;
+    min-width: 146px;
+  }
+
+  .hero-header-wrapper {
+    min-height: 760px;
+    padding-bottom: 30px;
+    background-image: url(../img/hero-bg-mobile.svg);
+  }
+
+  .site-header {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .site-header__logo {
+    width: 155px;
+    height: 28px;
+  }
+
+  .hero-header-wrapper__hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    align-items: flex-start;
+    margin: 0;
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .hero__button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-cashback {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .section-cashback__cashback {
+    padding: 0;
+  }
+
+  .cashback__content {
+    padding-top: 43px;
+    padding-right: 22px;
+    padding-left: 22px;
+    text-align: left;
+  }
+
+  .cashback__title {
+    margin-bottom: 22px;
+    font-size: 38px;
+  }
+
+  .cashback__title::first-line {
+    font-size: 64px;
+  }
+
+  .cashback__text {
+    font-size: 16px;
+  }
+
+  .cashback__img {
+    width: 303px;
+    height: 110px;
+    margin-bottom: 50px;
+  }
+}
