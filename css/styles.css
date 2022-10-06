@@ -764,6 +764,7 @@ h3 {
   background-color: transparent;
   box-shadow: 6.01389px 6.01389px 12.0278px rgba(170, 170, 204, 0.5), -6.01389px -6.01389px 12.0278px #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .form__button-img {
